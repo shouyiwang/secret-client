@@ -3,7 +3,7 @@ import axios from 'axios';
 import SecretCard from './SecretCard';
 import "./style.css";
 
-const SECRET_URL = 'http://localhost:3000/secrets.json';
+const SECRET_URL = 'https://secret-share-server.herokuapp.com/secrets.json';
 
 class SecretPanel extends Component {
   constructor() {

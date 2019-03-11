@@ -5,7 +5,7 @@ import Navbar from './Navbar'
 import './style.css'
 import ShareButton from 'react-social-share-buttons'
 
-const SECRET_URL = 'http://localhost:3000/secrets/';
+const SECRET_URL = 'https://secret-share-server.herokuapp.com/secrets/';
 
 class SecretPage extends Component {
   constructor() {

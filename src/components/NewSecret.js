@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import Navbar from './Navbar'
 
-const SECRET_URL = 'http://localhost:3000/secrets.json';
+const SECRET_URL = 'https://secret-share-server.herokuapp.com/secrets.json';
 const categories = [
   "Please select a Category..",
   "a dream",
