@@ -1,0 +1,247 @@
+* {
+   /*border: 1px solid green; */
+   margin: 0;
+   border: 0;
+}
+
+
+body {
+  background-color: #efeff0;
+}
+
+.sidebar {
+  width: 220px;
+  height: 418px;
+}
+
+.sidebar a {
+  color: white;
+}
+
+.secret-panel {
+  position:absolute;
+  top: 70px;
+  left: 220px;
+}
+
+
+
+.secret-panel ul {
+  margin: 0 0 20px;
+}
+
+.secret-panel ul li {
+  float: left;
+  positon: absolute;
+}
+
+.page {
+  positon: relative;
+  background-color: white;
+  margin: 15px auto;
+  padding: 30px;
+  height: auto;
+  width: 660px;
+  box-shadow: 0 0 2px 2px #ccc;
+}
+
+.label-div {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+}
+
+a.clickable{
+       cursor: hand;
+   }
+
+.comments {
+  background-color: #fbfbfb;
+}
+
+.comments ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.comments li {
+  font:15px medium-content-serif-font ,Helvetica, Verdana, sans-serif;
+  padding: 10px 20px;
+}
+
+ .comments li:nth-of-type(odd) {
+    background-color: #e9e9f9 ;
+}
+
+
+.page p {
+   font-family: medium-content-serif-font,Georgia,Cambria,"Times New Roman",Times,serif;
+   font-size: 16px;
+}
+
+.share-block {
+  width: 300px;
+  padding-bottom: 20px;
+}
+
+.share-button {
+  display: inline-block;
+}
+
+.share-block a {
+  width: 10px;
+}
+
+ShareButton {
+  width: 10px;
+}
+
+textarea {
+  border: 2px solid #efeff0;
+  color: black;
+  padding: 10px;
+  width: 550px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+textarea.large {
+  height: 400px;
+}
+
+input {
+  background-color: #ff9800;
+  padding: 6px;
+  cursor:pointer;
+}
+
+input:hover {
+  border: 1px solid black;
+  padding: 6px;
+}
+
+label.category {
+  display: inline;
+  color: white;
+  text-transform: uppercase;
+  font: 15px Helvetica;
+  padding: 5px;
+}
+.a-dream {
+  background-color: #940e85;
+}
+.a-fantasy {
+  background-color: #d31386;
+}
+.a-first-experience {
+  background-color: #129777;
+}
+.a-guilt {
+  background-color: #000000;
+}
+.a-lie {
+  background-color: #cccc52;
+}
+.a-pain {
+  background-color: #67c0e5;
+}
+.a-random-feeling {
+  background-color: #9d1168;
+}
+.a-truth {
+  background-color: #eec4b4;
+}
+.a-wild-experience {
+  background-color: #e04c56;
+}
+.Other {
+  background-color: #a2a2a2;
+}
+
+
+
+
+.inline {
+  display: inline-block;
+}
+
+.card {
+  position: relative;
+  width: 250px;
+  max-height: 200px;
+  height: 180px;
+  padding: 30px 15px 15px 15px;
+  margin: 15px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 0 2px 2px #ccc;
+}
+
+.card:hover {
+  width: 260px;
+  height: 190px;
+  padding: 35px 20px 20px 20px;
+  margin: 10px;
+}
+
+.card a {
+  text-decoration: none;
+  font-weight: normal;
+  font: 15px Helvetica;
+}
+
+.card a:hover {
+  color: grey;
+}
+
+.likes-icons {
+  font-size: 14px;
+  opacity: 1;
+  cursor:pointer;
+}
+
+.card .likes-icons {
+  position: absolute;
+  bottom: 10px;
+}
+
+.likes-icons i.fa-thumbs-up {
+  color: green;
+}
+
+.likes-icons i.fa-thumbs-down {
+  color: red;
+}
+
+
+.bgcolor {
+  background-color: grey;
+}
+
+.nav {
+  background-color: #303030;
+  color: white;
+}
+
+div a, h1, h2, h3, input, label {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-weight: bold;
+}
+
+#secretButton {
+  display: inline;
+  margin-top: 16px;
+  margin-left: 50px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+#secretButton:hover {
+  border: 2px solid white;
+  margin-top: 14px;
+}
