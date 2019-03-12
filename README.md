@@ -13,7 +13,7 @@ Disclaimer: The contents of the website, which contains more than 5,000 secrets 
 
 VIEWER DISCRETION IS ADVISED
 
-Live demo [here](https://secret-share-client.herokuapp.com).
+Live demo [here](https://secret-share-client.herokuapp.com). (Because of Heroku's cache mechanism, it takes some time to open it after a while, and maybe needs a refresh after loading the page.)
 
 ## TODO
 Use Python and Gensim (a human language processing library) to analyse the text of each secret, and add recommendations of similar stories.
