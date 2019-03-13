@@ -4,8 +4,7 @@ import NewComment from './NewComment'
 import Navbar from './Navbar'
 import './style.css'
 import ShareButton from 'react-social-share-buttons'
-
-const SECRET_URL = 'https://secret-share-server.herokuapp.com/secrets/';
+import {SINGLE_SECRET_URL} from "./Constants"
 
 class SecretPage extends Component {
   constructor() {
@@ -17,6 +16,7 @@ class SecretPage extends Component {
       dislikes: 0,
       comments: []
     };
+    this._handleClick = this._handleClick.bind(this);
   }
 
   componentDidMount() {
@@ -24,7 +24,7 @@ class SecretPage extends Component {
   }
 
   fetchSecret = () => {
-    axios.get(`${SECRET_URL}${this.props.match.params.id}.json`).then( (result) => {
+    axios.get(`${SINGLE_SECRET_URL}${this.props.match.params.id}.json`).then( (result) => {
       this.setState({
         content: result.data.content,
         category: result.data.category,
@@ -36,6 +36,21 @@ class SecretPage extends Component {
     });
   };
 
+  _handleClick(e) {
+    if(e.target.className.includes("up")) {
+      this.updateSecret(this.state.likes + 1, this.state.dislikes);
+    }
+    else {
+      this.updateSecret(this.state.likes, this.state.dislikes + 1);
+    }
+  }
+
+  updateSecret(likes, dislikes) {
+    axios.put(`${SINGLE_SECRET_URL}${this.props.match.params.id}.json`, {likes: likes, dislikes: dislikes}).then((results) => {
+      this.setState( { likes: likes, dislikes: dislikes} );
+    });
+  }
+
   render() {
     return (
       <div>
@@ -46,8 +61,8 @@ class SecretPage extends Component {
             <label className={"category " + this.state.category.replace(/ /g, "-")}> {this.state.category}</label>
           </div>*/ }
           <div className="likes-icons">
-            <i className="far fa-thumbs-up"></i> {this.state.likes} &nbsp; &nbsp;
-            <i className="far fa-thumbs-down"></i> {this.state.dislikes}  &nbsp; &nbsp;
+            <i className="far fa-thumbs-up" onClick={this._handleClick}></i> {this.state.likes} &nbsp; &nbsp;
+            <i className="far fa-thumbs-down" onClick={this._handleClick}></i> {this.state.dislikes}  &nbsp; &nbsp;
           </div>
           <br />
           <Content content={this.state.content} />

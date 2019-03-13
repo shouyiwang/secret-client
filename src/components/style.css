@@ -202,7 +202,10 @@ label.category {
 .likes-icons {
   font-size: 14px;
   opacity: 1;
-  cursor:pointer;
+}
+
+.fa-thumbs-up, .fa-thumbs-down {
+  cursor: pointer;
 }
 
 .card .likes-icons {

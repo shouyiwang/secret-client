@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import SecretCard from './SecretCard';
 import "./style.css";
+import {SECRET_URL} from "./Constants.js";
 
-const SECRET_URL = 'https://secret-share-server.herokuapp.com/secrets.json';
 
 class SecretPanel extends Component {
   constructor() {

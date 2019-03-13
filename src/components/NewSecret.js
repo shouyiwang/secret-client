@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import Navbar from './Navbar'
+import Navbar from './Navbar';
+import {SECRET_URL} from "./Constants.js";
 
-const SECRET_URL = 'https://secret-share-server.herokuapp.com/secrets.json';
+
 const categories = [
   "Please select a Category..",
   "a dream",

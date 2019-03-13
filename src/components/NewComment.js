@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Route , withRouter} from 'react-router-dom';
 import axios from 'axios';
+import {COMMENT_URL} from './Constants'
 
-const COMMENT_URL = 'https://secret-share-server.herokuapp.com/comments.json';
 
 class NewComment extends Component {
   constructor() {
