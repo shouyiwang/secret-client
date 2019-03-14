@@ -30,11 +30,6 @@ body {
   margin: 0 0 20px;
 }
 
-.secret-panel ul li {
-  float: left;
-  positon: absolute;
-}
-
 .page {
   positon: relative;
   background-color: white;
@@ -247,4 +242,57 @@ div a, h1, h2, h3, input, label {
 #secretButton:hover {
   border: 2px solid white;
   margin-top: 14px;
+}
+
+ReactPaginate{
+  font-size: 20px;
+}
+
+div.paginate {
+  margin-bottom: 50px;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul.pagination {
+  display: block;
+
+}
+
+ul.pagination li {
+    display: inline-block;
+    padding: 0px;
+    margin-left: 3px;
+    cursor: pointer;
+}
+ul.pagination li.active {
+    color: orange;
+}
+
+ul.pagination li a {
+  padding: 3px;
+
+}
+
+ul.pagination li a:focus {
+  outline: none;
+}
+
+ul.pagination li a:hover {
+  color: green;
+}
+
+div.home {
+  position: relative;
+}
+
+div.footer {
+  position: absolute;
+  width: 100%;
+
+    bottom: 0;
+  padding: 1rem;
+  background-color: green;
+  text-align: center;
 }
