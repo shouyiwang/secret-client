@@ -13,6 +13,8 @@ Disclaimer: The contents of the website, which contains more than 5,000 secrets 
 
 VIEWER DISCRETION IS ADVISED
 
+The database is considered to be too large by heroku, and as I haven't pay for the premium service fee, the loading time is very long. Please refresh one or two times after 1 minute if nothing happens.
+
 Live demo [here](https://secret-share-client.herokuapp.com). 
 
 ## TODO
